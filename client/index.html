@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb movies data</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/darkly/bootstrap.min.css">
+    <!-- dark theme for bootstrap -->
+    <style>
+        main{
+            margin-top: 2em;
+        }
+        .center{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- main tag refers to the main content of the webpage -->
+    <div class="center">
+        <h1>Movie Scraper - Get the general audience consensus of your favourite movie!</h1>
+    </div>
+    <main class="container">
+        <form>
+            <!-- fieldset groups multiple similar elements -->
+            <fieldset class="form-group">
+                <label for="search">Search</label>
+                <input type="text" class="form-control" id="search" placeholder="Search for a movie">
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <ul class="list-group" id="results"></ul>
+    </main>
+    <script src="app.js" charset="utf-8"></script>
+    <!-- script embeds js code basically allowing us to give functionality to Submit buttons etc -->
+</body>
+</html>
